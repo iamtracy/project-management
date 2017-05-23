@@ -33,5 +33,4 @@ describe('AppComponent', () => {
     expect(projects).toBeTruthy();
   }));
 
-
 });
