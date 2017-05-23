@@ -1,3 +1,7 @@
-<p>
-  project-list works!
-</p>
+<div class="card" style="width: 20rem; margin-bottom: .5rem;" *ngFor="let project of projects">
+    <div class="card-block">
+        <h4 class="card-title">{{project.client}}</h4>
+        <p class="card-text">{{project.project}}</p>
+        <a href="{{project.showkey}}" class="btn btn-primary">Go to {{project.project}}</a>
+    </div>
+</div>
