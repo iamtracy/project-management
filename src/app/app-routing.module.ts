@@ -9,7 +9,8 @@ import { ProjectsComponent } from './projects/projects.component';
 const appRoutes: Routes = [
   { path: '', redirectTo: '/projects', pathMatch: 'full' },
   { path: 'projects', component: ProjectsComponent, children: [
-    { path: '', component: ProjectStartComponent }
+    { path: '', component: ProjectStartComponent },
+    { path: ':id', component: ProjectDetailComponent }
   ]}
 ];
 

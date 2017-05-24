@@ -15,4 +15,8 @@ export class ProjectService {
     return this.projects;
   }
 
+  getProject(index: number) {
+    return this.projects[index];
+  }
+
 }

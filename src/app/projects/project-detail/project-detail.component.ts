@@ -12,6 +12,7 @@ import { ProjectService } from './../project.service';
 
 export class ProjectDetailComponent implements OnInit, OnDestroy {
   project: Project;
+  id: number;
   
   constructor( private route: ActivatedRoute, private router: Router, private projectService: ProjectService) { }
 
@@ -19,7 +20,8 @@ export class ProjectDetailComponent implements OnInit, OnDestroy {
     this.route.params
       .subscribe(
         (params: Params) => {
-          console.log(params['id']);
+          this.id = +params['id'];
+          this.project = this.projectService.getProject(this.id);
         });
   }
 
