@@ -5,13 +5,17 @@ import { AppComponent } from './app.component';
 import { ProjectStartComponent } from './projects/project-start/project-start.component';
 import { ProjectDetailComponent } from './projects/project-detail/project-detail.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { LoginComponent } from './auth/login/login.component';
+import { RegisterComponent } from './auth/register/register.component';
 
 const appRoutes: Routes = [
-  { path: '', redirectTo: '/projects', pathMatch: 'full' },
-  { path: 'projects', component: ProjectsComponent, children: [
+  { path: '', redirectTo: 'project', pathMatch: 'full' },
+  { path: 'project', component: ProjectsComponent, children: [
     { path: '', component: ProjectStartComponent },
     { path: ':id', component: ProjectDetailComponent }
-  ]}
+  ]},
+  { path: 'register',  component: RegisterComponent },
+  { path: 'login',  component: LoginComponent },
 ];
 
 @NgModule({

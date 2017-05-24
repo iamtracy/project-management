@@ -12,7 +12,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ProjectListComponent } from './projects/project-list/project-list.component';
 import { ProjectDetailComponent } from './projects/project-detail/project-detail.component';
 import { ProjectStartComponent } from './projects/project-start/project-start.component';
-import { AuthComponent } from './auth/auth.component';
+import { RegisterComponent } from './auth/register/register.component';
+import { LoginComponent } from './auth/login/login.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AuthComponent } from './auth/auth.component';
     ProjectListComponent,
     ProjectDetailComponent,
     ProjectStartComponent,
-    AuthComponent
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

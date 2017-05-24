@@ -10,11 +10,11 @@ import { Project } from './../../project.model';
 export class ProjectListComponent implements OnInit {
   projects: Project[];
   index: number;
+  
   constructor(private projectService: ProjectService) { }
 
   ngOnInit() {
     this.projects = this.projectService.getProjects();
-    console.log(this.projects)
   }
 
 }
