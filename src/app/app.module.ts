@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { AppRoutingModule } from './app-routing.module';
 import { ProjectService } from './projects/project.service';
 
 import { AppComponent } from './app.component';
@@ -22,7 +23,8 @@ import { ProjectDetailComponent } from './projects/project-detail/project-detail
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
   providers: [ProjectService],
   bootstrap: [AppComponent]

@@ -1,3 +1,5 @@
+import { ProjectDetailComponent } from './projects/project-detail/project-detail.component';
+import { ProjectListComponent } from './projects/project-list/project-list.component';
 import { TestBed, async } from '@angular/core/testing';
 
 import { AppComponent } from './app.component';
@@ -10,7 +12,9 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent,
         HeaderComponent,
-        ProjectsComponent
+        ProjectsComponent,
+        ProjectListComponent,
+        ProjectDetailComponent,
       ],
     }).compileComponents();
   }));
