@@ -18,7 +18,9 @@ export class ProjectDetailComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.route.params
       .subscribe(
-        (params: Params) => {});
+        (params: Params) => {
+          console.log(params['id']);
+        });
   }
 
   ngOnDestroy() {

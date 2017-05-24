@@ -11,6 +11,7 @@ import { HeaderComponent } from './header/header.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectListComponent } from './projects/project-list/project-list.component';
 import { ProjectDetailComponent } from './projects/project-detail/project-detail.component';
+import { ProjectStartComponent } from './projects/project-start/project-start.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ProjectDetailComponent } from './projects/project-detail/project-detail
     HeaderComponent,
     ProjectsComponent,
     ProjectListComponent,
-    ProjectDetailComponent
+    ProjectDetailComponent,
+    ProjectStartComponent
   ],
   imports: [
     BrowserModule,
